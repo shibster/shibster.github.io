@@ -1,0 +1,84 @@
+<html>
+<head>
+<style>
+body {font-family:SourceSansPro}
+
+.button1
+{
+	background-color:#FFC000;
+	text-decoration:none;
+	font-family:SourceSansPro, arial;
+	color: #001D41;
+	font-size:14pt;
+	padding:10px;
+	font-weight:600;
+	width:200px;
+}
+
+.Label
+{
+	font-family:SourceSansPro,arial;
+	color: #001D41;
+	font-size:12pt;
+	padding:10px;
+	width:300px;
+}
+
+.button2
+{
+	background-color:#A6A6A6;
+}
+
+a:visited
+{
+	text-decoration:none;
+	color: #001D41;
+}
+</style>
+
+
+</head>
+<body>
+<br /><br /><br />
+<center>
+<img src="MASpace_App_with_logotype@3x.png" alt="MASpace" width="100" />
+</center>
+<p style="font-size:40px;font-family:SourceSansPro">
+
+<center>
+<div class="button1" width="200" id="button1">
+<a onclick="startInstall(this)" href="itms-services://?action=download-manifest&url=https://nicholastps93.github.io/maspacemanifest.plist">
+    Install
+</a>
+</div>
+
+
+<div id="button2" style="display:none">
+<div class="Label">
+Click OK to close this page. The MASpace Mobile App is being installed in the background. Toggle to your Home Screen to look for it.
+</div>
+<div class="button1">
+<a onclick="finishInstall()" href="#">
+    OK
+</a>
+</div>
+</div>
+
+</center>
+</p>
+
+<script>
+function startInstall(obj)
+{
+	button1.style.display='none';
+	button2.style.display='';
+}
+
+function finishInstall()
+{
+	window.close();
+}
+
+</script>
+</body>
+</html>

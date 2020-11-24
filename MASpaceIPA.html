@@ -1,6 +1,12 @@
 <html>
 <head>
 <style>
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('SourceSansPro-Regular.ttf');
+}
+
 body {font-family:SourceSansPro}
 
 .button1
@@ -29,6 +35,12 @@ body {font-family:SourceSansPro}
 	background-color:#A6A6A6;
 }
 
+a:link
+{
+	text-decoration:none;
+	color: #001D41;
+}
+
 a:visited
 {
 	text-decoration:none;
@@ -55,7 +67,8 @@ a:visited
 
 <div id="button2" style="display:none">
 <div class="Label">
-Click OK to close this page. The MASpace Mobile App is being installed in the background. Toggle to your Home Screen to look for it.
+<p>Click OK to close this page.</p>
+<p>The MASpace Mobile App is being installed in the background. Toggle to your Home Screen to look for it.</p>
 </div>
 <div class="button1">
 <a onclick="finishInstall()" href="#">
